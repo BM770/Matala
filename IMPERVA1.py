@@ -64,6 +64,14 @@ def addDaysToDate(date, daysToAdd):
 
 
 def checkMyFunction(date, daysToAdd):
+    """
+    Check if the function I wrote work as expected
+        :param date: date to check
+        :type date: str
+        :param days: days to add
+        :type days: int
+        :return: True if my solution is expected, raise exception if not
+    """
     from datetime import datetime
     from datetime import timedelta
     expectedSolution = datetime.strptime(date, "%d.%m.%Y") + timedelta(days=daysToAdd)
